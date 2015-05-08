@@ -1,0 +1,76 @@
+.navbar.navbar-top {
+  background-color: #2c3e50;
+  border-width: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.navbar.navbar-top .navbar-brand,
+.navbar.navbar-top .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar.navbar-top .navbar-brand:hover,
+.navbar.navbar-top .navbar-nav > li > a:hover {
+  color: #18bc9c;
+  background-color: transparent;
+}
+header {
+  background-color: #111;
+  height: 400px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.tags {
+  font-size: 0.9em;
+  line-height: 2em;
+  color: #999;
+}
+.tags span + span {
+  margin-left: 1em;
+}
+section h2 {
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 1.5em;
+}
+section h2:before {
+  content: "=[";
+  color: #999;
+  margin-right: .2em;
+}
+section h2:after {
+  content: "]=";
+  color: #999;
+  margin-left: .2em;
+}
+section .row + .row:before {
+  content: "";
+  background-color: #eee;
+  margin: 2em;
+  height: 1px;
+  display: block;
+}
+section .col-md-7 a img {
+  margin: auto;
+}
+@media (min-width: 992px) {
+  section .col-md-7 a img {
+    max-height: 400px;
+  }
+}
+section .col-md-5 h3 {
+  margin-top: 0;
+}
+section .col-md-5 .link {
+  font-weight: bold;
+}
+section .col-md-5 .link a {
+  font-weight: normal;
+}
+/*# sourceMappingURL=main.css.map */
