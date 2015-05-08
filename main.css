@@ -18,6 +18,40 @@ header {
   background-color: #111;
   height: 400px;
 }
+header i.fa.fa-star {
+  color: #222;
+  animation: pulsate 1s ease-out;
+  opacity: 0;
+  font-size: 400px;
+  line-height: 400px;
+  -moz-animation: pulsate 8s ease-out;
+  -webkit-animation: pulsate 8s ease-out;
+  -o-animation: pulsate 8s ease-out;
+  -ms-animation: pulsate 8s ease-out;
+  animation: pulsate 8s ease-out;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 h1,
 h2,
 h3,
@@ -56,6 +90,12 @@ section .row + .row:before {
   height: 1px;
   display: block;
 }
+section .col-md-7 a {
+  display: block;
+}
+section .col-md-7 a + a {
+  margin-top: 1em;
+}
 section .col-md-7 a img {
   margin: auto;
 }
@@ -64,8 +104,10 @@ section .col-md-7 a img {
     max-height: 400px;
   }
 }
-section .col-md-5 h3 {
-  margin-top: 0;
+@media (min-width: 992px) {
+  section .col-md-5 h3 {
+    margin-top: 0;
+  }
 }
 section .col-md-5 .link {
   font-weight: bold;
